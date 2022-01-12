@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.apache.commons.lang3.tuple.Pair;
-import utils.Vertex;
+import searchalgorithms.utils.Vertex;
 
 @Setter
 @Getter

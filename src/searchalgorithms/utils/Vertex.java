@@ -1,4 +1,4 @@
-package utils;
+package searchalgorithms.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,13 +16,22 @@ public class Vertex {
     private List<Vertex> adjacencyList;
     private Pair<Integer, Integer> vertexIndex;
 
-    public static Vertex createVertex(final Character vertexName) {
+    public static Vertex createVertexWithChar(final Character vertexName) {
 
        return Vertex.builder()
            .name(vertexName.toString())
            .adjacencyList(new ArrayList<>())
            .visited(false)
            .build();
+    }
+
+    public static Vertex createVertexWithString(final String vertexName) {
+
+        return Vertex.builder()
+            .name(vertexName)
+            .adjacencyList(new ArrayList<>())
+            .visited(false)
+            .build();
     }
 
     public static Vertex createVertex(final int vertexValue) {
