@@ -1,4 +1,4 @@
-package topologicalorder.shortestpath;
+package topologicalorder.utils;
 
 import java.util.ArrayList;
 import java.util.List;

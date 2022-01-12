@@ -1,8 +1,8 @@
 package topologicalorder.shortestpath;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+import topologicalorder.utils.Vertex;
 
 public class TopologicalShortestPathApplication {
 

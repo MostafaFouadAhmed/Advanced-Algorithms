@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Stack;
 import org.apache.commons.lang3.tuple.Pair;
+import topologicalorder.utils.Vertex;
 
 public class ShortestPathAlgorithm {
 

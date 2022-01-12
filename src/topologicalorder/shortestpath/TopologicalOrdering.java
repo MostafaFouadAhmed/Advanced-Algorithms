@@ -2,6 +2,7 @@ package topologicalorder.shortestpath;
 
 import java.util.Stack;
 import org.apache.commons.lang3.tuple.Pair;
+import topologicalorder.utils.Vertex;
 
 
 public class TopologicalOrdering {
