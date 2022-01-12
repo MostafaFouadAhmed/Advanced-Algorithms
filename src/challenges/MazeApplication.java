@@ -1,6 +1,7 @@
-import challenges.Maze;
+package challenges;
+
 import java.util.Stack;
-import utils.Vertex;
+import searchalgorithms.utils.Vertex;
 
 
 public class MazeApplication {

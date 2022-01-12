@@ -2,7 +2,7 @@ package searchalgorithms;
 
 import java.util.List;
 import java.util.Stack;
-import utils.Vertex;
+import searchalgorithms.utils.Vertex;
 
 public class DepthFirstSearch {
 

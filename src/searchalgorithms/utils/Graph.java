@@ -1,4 +1,4 @@
-package utils;
+package searchalgorithms.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Graph {
     public List<Vertex> createGraphUsingAdjacencyList(final int numberOfVertices, final List<Vertex> graph) {
         for (int i = 0; i < numberOfVertices; i++) {
 
-            graph.add(Vertex.createVertex(numberToAlphabet(i+1)));
+            graph.add(Vertex.createVertexWithChar(numberToAlphabet(i+1)));
         }
 
         return graph;

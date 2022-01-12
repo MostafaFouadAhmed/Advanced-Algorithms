@@ -1,10 +1,12 @@
-import static utils.Graph.initializeDefaultGraphUsingAdjacencyList;
+package searchalgorithms;
+
+import static searchalgorithms.utils.Graph.initializeDefaultGraphUsingAdjacencyList;
 
 import searchalgorithms.BreadthFirstSearch;
 import searchalgorithms.DepthFirstSearch;
 import org.apache.commons.lang3.tuple.Pair;
-import utils.Graph;
-import utils.Vertex;
+import searchalgorithms.utils.Graph;
+import searchalgorithms.utils.Vertex;
 import java.util.List;
 
 public class SearchApplication {

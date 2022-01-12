@@ -2,7 +2,7 @@ package searchalgorithms;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import utils.Vertex;
+import searchalgorithms.utils.Vertex;
 
 public class BreadthFirstSearch {
 
