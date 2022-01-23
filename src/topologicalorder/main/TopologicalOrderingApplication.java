@@ -3,9 +3,6 @@ package topologicalorder.main;
 import java.util.List;
 import java.util.Stack;
 import org.apache.commons.lang3.tuple.Pair;
-import topologicalorder.main.TopologicalOrdering;
-import searchalgorithms.utils.Graph;
-import searchalgorithms.utils.Vertex;
 
 public class TopologicalOrderingApplication {
 

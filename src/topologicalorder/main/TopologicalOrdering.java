@@ -1,7 +1,8 @@
 package topologicalorder.main;
 
 import java.util.Stack;
-import searchalgorithms.utils.Vertex;
+
+
 
 public class TopologicalOrdering {
 
@@ -19,6 +20,7 @@ public class TopologicalOrdering {
                 dfs(adjVertex);
             }
         }
+        System.out.println("Pushed in Stack : "+ vertex.getName());
         verticesStack.push(vertex);
     }
 
