@@ -25,15 +25,6 @@ public class Vertex {
            .build();
     }
 
-    public static Vertex createVertexWithString(final String vertexName) {
-
-        return Vertex.builder()
-            .name(vertexName)
-            .adjacencyList(new ArrayList<>())
-            .visited(false)
-            .build();
-    }
-
     public static Vertex createVertex(final int vertexValue) {
 
         return Vertex.builder()
