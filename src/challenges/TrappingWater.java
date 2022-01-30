@@ -14,8 +14,8 @@ public class TrappingWater {
         System.out.println(trap(new int []{0,7,1,4,6})); // =7
         System.out.println(trap(new int []{0,1,2,0,3,0,1,2,0,0,4,2,1,2,5,0,1,2,0,2})); // =26
         System.out.println(trap(new int []{4,9,4,5,3,2})); // =1
-        System.out.println(trap(new int []{1,7,8})); // =1
-        System.out.println(trap(new int []{1})); // =1
+        System.out.println(trap(new int []{1,7,8})); // =0
+        System.out.println(trap(new int []{1})); // =0
 
     }
 
