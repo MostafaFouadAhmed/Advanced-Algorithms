@@ -1,6 +1,6 @@
 package challenges;
 
-public class TrappingWaterV2 {
+public class TrappingWater {
 
     public static void main(String[] args) {
 
