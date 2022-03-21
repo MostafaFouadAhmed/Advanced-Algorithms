@@ -2,8 +2,6 @@ package topologicalorder.main;
 
 import java.util.Stack;
 
-
-
 public class TopologicalOrdering {
 
     private final Stack<Vertex> verticesStack;

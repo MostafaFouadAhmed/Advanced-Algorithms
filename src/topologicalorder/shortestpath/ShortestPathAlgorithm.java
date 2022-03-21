@@ -118,5 +118,4 @@ public class ShortestPathAlgorithm {
         vertex.setShortestDistanceFromSource(Integer.MAX_VALUE);
     }
 
-
 }
