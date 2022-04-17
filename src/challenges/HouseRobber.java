@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class HouseRobber {
 
-    private static final ArrayList<Node> GRAPH = new ArrayList<>();
+    private final ArrayList<Node> GRAPH = new ArrayList<>();
 
-    private static class Node {
+    public static class Node {
         final int value;
         int maxMoney;
         final ArrayList<Node> adjacentNodes;
@@ -68,12 +68,12 @@ public class HouseRobber {
         // return Math.max(GRAPH.get(0).getMaxMoney(), GRAPH.get(1).getMaxMoney());
     }
 
-    private static void createGraph (final int nums[]) {
+    private void createGraph (final int nums[]) {
 
         for (final int num: nums) GRAPH.add(new Node(num));
     }
 
-    private static void setAdjacentNodes(final int[] nums) {
+    private void setAdjacentNodes(final int[] nums) {
 
         int pointer = 0;
 
@@ -84,7 +84,7 @@ public class HouseRobber {
         }
     }
 
-    private static void setAdjacencyForCurrentNode(final int nodeIndex, final int numsLength) {
+    private  void setAdjacencyForCurrentNode(final int nodeIndex, final int numsLength) {
 
         if (nodeIndex == numsLength - 3) {
             GRAPH.get(nodeIndex).adjacentNodes.add(GRAPH.get(nodeIndex + 2));

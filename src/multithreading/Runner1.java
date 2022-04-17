@@ -4,6 +4,7 @@ import lombok.Setter;
 
 @Setter
 public class Runner1 extends Thread{
+
     private volatile boolean done;
 
     public Runner1 (final boolean done) {

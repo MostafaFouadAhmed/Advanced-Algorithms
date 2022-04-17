@@ -1,8 +1,7 @@
 package challenges;
 
 import java.util.Stack;
-import searchalgorithms.utils.Vertex;
-
+import graphs.searchalgorithms.utils.Vertex;
 
 public class MazeApplication {
 
@@ -49,14 +48,14 @@ public class MazeApplication {
             currentVertex.setVisited(true);
 
             if (currentVertex.getVertexValue() == 3) {
-                System.out.print(currentVertex.getVertexValue() + " (at index [" + currentVertex.getVertexIndex().getLeft() + ","
-                    + currentVertex.getVertexIndex().getRight() + "])" + " ===> FINISHED !!!");
+                System.out.print(currentVertex.getVertexValue() + " (at index [" + currentVertex.getVertexIndex().left+ ","
+                    + currentVertex.getVertexIndex().right + "])" + " ===> FINISHED !!!");
             } else {
 
                 setAdjacencyOfTheCurrentVertex(maze, currentVertex);
 
-                System.out.print(currentVertex.getVertexValue() + " (at index [" + currentVertex.getVertexIndex().getLeft() + ","
-                    + currentVertex.getVertexIndex().getRight() + "])" + " -> ");
+                System.out.print(currentVertex.getVertexValue() + " (at index [" + currentVertex.getVertexIndex().left + ","
+                    + currentVertex.getVertexIndex().right + "])" + " -> ");
 
                 for (Vertex vertex : currentVertex.getAdjacencyList()) {
 
@@ -90,8 +89,8 @@ public class MazeApplication {
 
     private void setAdjacencyOfTheCurrentVertex(Maze maze, Vertex vertex) {
 
-        final int left = vertex.getVertexIndex().getLeft();
-        final int right = vertex.getVertexIndex().getRight();
+        final int left = vertex.getVertexIndex().left;
+        final int right = vertex.getVertexIndex().right;
         final int mazeLength = maze.getMazeMatrix().length;
 
         // ONE OF NON-EDGED VERTICES

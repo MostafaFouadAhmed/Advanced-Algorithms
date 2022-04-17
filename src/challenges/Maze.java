@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.apache.commons.lang3.tuple.Pair;
-import searchalgorithms.utils.Vertex;
+import org.apache.commons.lang3.Pair;
+import graphs.searchalgorithms.utils.Vertex;
 
 @Setter
 @Getter
@@ -51,7 +51,7 @@ public class Maze {
 
     public Vertex getCurrentVertex(final Pair<Integer, Integer> currentVertexIndex) {
 
-        return mazeMatrix[currentVertexIndex.getLeft()][currentVertexIndex.getRight()];
+        return mazeMatrix[currentVertexIndex.left][currentVertexIndex.right];
     }
 
     private void setVerticesNames(final Vertex [][] maze) {
